@@ -1,2 +1,2 @@
 # sobre-cobre
- Sobre cobre
+ Sobre o cobre

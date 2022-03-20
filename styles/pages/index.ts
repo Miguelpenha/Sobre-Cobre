@@ -3,15 +3,17 @@ import styled from 'styled-components'
 export const Header = styled.header`
     padding: 1%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     background-color: #ffffff;
+    padding-top: 12%;
 `
 
 export const Title = styled.h1`
-    font-size: 4vw;
+    font-size: 40px;
     margin: auto;
-    background: linear-gradient(to right, #F2AD94, #F28066, #D9805F, #BF7160, #8C4830);
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #A37151 0%, #C8977F 97.49%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-size: 200% auto;
@@ -26,6 +28,95 @@ export const Title = styled.h1`
     }
 `
 
+export const SubTitle = styled.span`
+    color: #000000;
+    margin-top: 12%;
+    font-size: 15px;
+    text-transform: uppercase;
+    white-space: 100px;
+`
+
+export const ContainerCara = styled.div`
+    margin-top: 2%;
+    overflow: hidden;
+    position: relative;
+
+    :hover {
+        video {
+            transform:scale(1.1);
+        }
+
+        div {
+            background: rgba(0, 0, 0, 0.5);
+        }
+    }
+`
+
+export const VideoCara = styled.video`
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    transition: all 1s ease;
+`
+
+export const ContainerCaraOverlay = styled.div`
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+`
+
+export const TextCara = styled.span`
+    margin-left: 2%;
+    font-size: 2.5vw;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 4%;
+    align-self: flex-end;
+
+    @media screen and (max-width: 600px) {
+        font-size: 3vw;
+    }
+
+    @media screen and (max-width: 450px) {
+        font-size: 3.5vw;
+    }
+`
+
+export const ContainerMate = styled.div`
+    background-color: #ffffff;
+    padding-top: 2%;
+`
+
+export const TextMate = styled.span`
+    color: #D9805F;
+    font-size: 2.9vw;
+    width: 90%;
+    display: block;
+    text-align: left;
+    margin: auto;
+    margin-bottom: 2%;
+`
+
+export const ContainerImageMate = styled.div`
+    overflow: hidden;
+    position: relative;
+`
+
+export const ImageMate = styled.img`
+    width: 100%;
+    margin-top: 1%;
+    transform: scale(1.05);
+
+    :hover {
+        transform: scale(1.1);
+        filter: brightness(75%);
+    }
+`
+
 export const Footer = styled.footer`
     width: 100%;
     display: flex;
@@ -33,36 +124,46 @@ export const Footer = styled.footer`
 `
 
 export const ListSocialNetworks = styled.ul`
-    width: fit-content;
+    padding: 1%;
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
 `
 
-export const ItemListSocialNetworks = styled.li`
-    width: 48%;
-    padding: 3%;
-    display: flex;
+interface ILinkItemListSocialNetworks {
+    width: string | number
+}
+
+export const LinkItemListSocialNetworks = styled.a<ILinkItemListSocialNetworks>`
+    width: ${props => props.width}%;
+    padding: 1%;
+    margin-bottom: 5%;
     border-radius: 10px;
-    align-items: center;
 
     :hover {
-        background-color: #d1d1d1
+        background-color: #cccccc;
+        text-decoration: underline #D9805F;
     }
 `
 
-export const LinkItemListSocialNetworks = styled.a`
-    width: 60%;
+export const ItemListSocialNetworks = styled.li`
     display: flex;
     align-items: center;
 `
 
 export const TitleItemListSocialNetworks = styled.span`
     color: #D9805F;
-    margin-left: 5%;
+    margin-left: 4%;
     white-space: nowrap;
+    font-size: 1.5vw;
 `
 
-export const IconItemListSocialNetworks = styled.svg`
-    width: 40%;
-    height: auto;
+interface IIconItemListSocialNetworks {
+    widthIcon: string | number
+}
+
+export const IconItemListSocialNetworks = styled.svg<IIconItemListSocialNetworks>`
     fill: #D9805F;
-    min-width: 40%;
+    height: auto;
+    width: ${props => props.widthIcon}%;
 `

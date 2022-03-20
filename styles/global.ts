@@ -11,20 +11,22 @@ export default createGlobalStyle`
         font-family: 'Roboto', sans-serif;
         transition-timing-function: linear;
         color: #FFFFFF;
-        scrollbar-color: #FFFFFF #D9805F;
+        scrollbar-color: #FFFFFF transparent;
         
         ::-webkit-scrollbar {
-            width: 14px;
+            width: 12px;
         }
 
         ::-webkit-scrollbar-track {
-            background: #D9805F;
+            background: transparent;
         }
 
         ::-webkit-scrollbar-thumb {
             border-radius: 16px;
             background-color: #FFFFFF;
         }
+
+        overflow: overlay;
     }
 
     html, body, body>div:first-child, div#__next, div#__next>div {

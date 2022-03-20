@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Header, Title, SubTitle, ContainerCara, VideoCara, ContainerCaraOverlay, TextCara, ContainerMate, TextMate, ContainerImageMate, ImageMate, Footer, ListSocialNetworks, LinkItemListSocialNetworks, ItemListSocialNetworks, TitleItemListSocialNetworks, IconItemListSocialNetworks } from '../styles/pages'
+import { Header, Title, SubTitle, ContainerCara, VideoCara, ContainerCaraOverlay, TextCara, ContainerMate, TextMate, ContainerImageMate, ImageMate, ContainerMol, TextMol, ContainerImageMol, VideoMol, ContainerFerra, ImageFerra, ContainerFerraOverlay, TextFerra, Footer, ListSocialNetworks, LinkItemListSocialNetworks, ItemListSocialNetworks, TitleItemListSocialNetworks, IconItemListSocialNetworks } from '../styles/pages'
 
 export default function Home() {
     return (
@@ -13,7 +13,7 @@ export default function Home() {
             </Header>
             <main>
                 <ContainerCara>
-                    <VideoCara src="Vídeo cobre.mp4" autoPlay={true} loop muted/>
+                    <VideoCara src="Vídeo cobre.mp4" autoPlay={true} loop muted playsInline/>
                     <ContainerCaraOverlay>
                         <TextCara>O cobre é um metal de transição maleável, dúctil e com resistência à corrosão, elemento de cor alaranjada, pode ser encontrado de forma nativa.</TextCara>
                     </ContainerCaraOverlay>
@@ -24,17 +24,18 @@ export default function Home() {
                         <ImageMate src="Foto cobre matériais.png"/>
                     </ContainerImageMate>
                 </ContainerMate>
-                <h1>Cobre é isso...</h1>
-                <h1>Cobre é isso...</h1>
-                <h1>Cobre é isso...</h1>
-                <h1>Cobre é isso...</h1>
-                <h1>Cobre é isso...</h1>
-                <h1>Cobre é isso...</h1>
-                <h1>Cobre é isso...</h1>
-                <h1>Cobre é isso...</h1>
-                <h1>Cobre é isso...</h1>
-                <h1>Cobre é isso...</h1>
-                <h1>Cobre é isso...</h1>
+                <ContainerMol>
+                    <TextMol>O cobre é um material versátil pelas suas propriedades metálicas e, principalmente, pela facilidade de moldagem. Suspeita-se ter sido o primeiro metal manipulado pelo ser humano.</TextMol>
+                    <ContainerImageMol>
+                        <VideoMol src="Vídeo cobre derretido.mp4" autoPlay={true} loop muted playsInline/>
+                    </ContainerImageMol>
+                </ContainerMol>
+                <ContainerFerra>
+                    <ImageFerra src="Foto cobre ferramentas.png"/>
+                    <ContainerFerraOverlay>
+                        <TextFerra>Marcou o fim da Idade da Pedra Polida com a substituição das ferramentas de pedra por ferramentas de cobre e ligas de cobre, esse período histórico ficou conhecido como Idade do Bronze.</TextFerra>
+                    </ContainerFerraOverlay>
+                </ContainerFerra>
             </main>
             <Footer>
                 <ListSocialNetworks>

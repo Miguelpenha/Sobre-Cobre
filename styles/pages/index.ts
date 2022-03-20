@@ -3,10 +3,10 @@ import styled from 'styled-components'
 export const Header = styled.header`
     padding: 1%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
     padding-top: 12%;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
 `
 
 export const Title = styled.h1`
@@ -32,12 +32,11 @@ export const SubTitle = styled.span`
     color: #000000;
     margin-top: 12%;
     font-size: 15px;
-    text-transform: uppercase;
     white-space: 100px;
+    text-transform: uppercase;
 `
 
 export const ContainerCara = styled.div`
-    margin-top: 2%;
     overflow: hidden;
     position: relative;
 
@@ -87,17 +86,18 @@ export const TextCara = styled.span`
 `
 
 export const ContainerMate = styled.div`
-    background-color: #ffffff;
     padding-top: 2%;
+    background-color: #ffffff;
 `
 
 export const TextMate = styled.span`
-    color: #D9805F;
-    font-size: 2.9vw;
+    
     width: 90%;
+    margin: auto;
+    color: #D9805F;
     display: block;
     text-align: left;
-    margin: auto;
+    font-size: 2.9vw;
     margin-bottom: 2%;
 `
 
@@ -112,8 +112,89 @@ export const ImageMate = styled.img`
     transform: scale(1.05);
 
     :hover {
+        transform: scale(1.06);
+        filter: brightness(75%);
+    }
+`
+
+export const ContainerMol = styled.div`
+    padding-top: 2%;
+    background-color: #ffffff;
+`
+
+export const TextMol = styled.span`
+    width: 90%;
+    margin: auto;
+    color: #D9805F;
+    display: block;
+    text-align: left;
+    font-size: 2.9vw;
+    margin-bottom: 2%;
+`
+
+export const ContainerImageMol = styled.div`
+    overflow: hidden;
+    position: relative;
+`
+
+export const VideoMol = styled.video`
+    width: 100%;
+    margin-top: 1%;
+    transform: scale(1.05);
+
+    :hover {
         transform: scale(1.1);
         filter: brightness(75%);
+    }
+`
+
+export const ContainerFerra = styled.div`
+    margin-top: 2%;
+    overflow: hidden;
+    position: relative;
+
+    :hover {
+        img {
+            transform:scale(1.1);
+        }
+
+        div {
+            background: rgba(0, 0, 0, 0.5);
+        }
+    }
+`
+
+export const ImageFerra = styled.img`
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+    transition: all 1s ease;
+`
+
+export const ContainerFerraOverlay = styled.div`
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.2);
+`
+
+export const TextFerra = styled.span`
+    margin-left: 2%;
+    font-size: 2.5vw;
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 4%;
+    align-self: flex-end;
+
+    @media screen and (max-width: 600px) {
+        font-size: 3vw;
+    }
+
+    @media screen and (max-width: 450px) {
+        font-size: 3.5vw;
     }
 `
 

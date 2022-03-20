@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Header, Title, SubTitle, ContainerCara, VideoCara, ContainerCaraOverlay, TextCara, ContainerMate, TextMate, ContainerImageMate, ImageMate, ContainerMol, TextMol, ContainerImageMol, VideoMol, ContainerFerra, ImageFerra, ContainerFerraOverlay, TextFerra, Footer, ListSocialNetworks, LinkItemListSocialNetworks, ItemListSocialNetworks, TitleItemListSocialNetworks, IconItemListSocialNetworks } from '../styles/pages'
+import { Header, Title, SubTitle, ContainerCara, VideoCara, ContainerCaraOverlay, TextCara, ContainerMate, TextMate, ContainerImageMate, ImageMate, ContainerMol, TextMol, ContainerImageMol, VideoMol, ContainerFerra, ImageFerra, ContainerFerraOverlay, TextFerra, ContainerPropi, ContainerTextPropi, TitlePropi, ListPropi, ItemPropi, ContainerImagePropi, ImagePropi, Footer, ListSocialNetworks, LinkItemListSocialNetworks, ItemListSocialNetworks, TitleItemListSocialNetworks, IconItemListSocialNetworks } from '../styles/pages'
 
 export default function Home() {
     return (
@@ -36,6 +36,24 @@ export default function Home() {
                         <TextFerra>Marcou o fim da Idade da Pedra Polida com a substituição das ferramentas de pedra por ferramentas de cobre e ligas de cobre, esse período histórico ficou conhecido como Idade do Bronze.</TextFerra>
                     </ContainerFerraOverlay>
                 </ContainerFerra>
+                <ContainerPropi>
+                    <ContainerTextPropi>
+                        <TitlePropi>Propriedades do cobre</TitlePropi>
+                        <ListPropi>
+                            <ItemPropi>Símbolo: <b>Cu</b></ItemPropi>
+                            <ItemPropi>Número atômico: <b>29</b></ItemPropi>
+                            <ItemPropi>Massa atômica: <b>63,546 u</b></ItemPropi>
+                            <ItemPropi>Ponto de ebulição: <b>2835 K</b></ItemPropi>
+                            <ItemPropi>Ponto de fusão: <b>1357,77 K</b></ItemPropi>
+                            <ItemPropi>Eletronegatividade: <b>1,9 (Pauling)</b></ItemPropi>
+                            <ItemPropi>Série química: <b>metal de transição</b></ItemPropi>
+                            <ItemPropi>Configuração eletrônica: <b>1s2 2s2 2p6 3s2 3p6 4s1 3d10</b></ItemPropi>
+                        </ListPropi>
+                    </ContainerTextPropi>
+                    <ContainerImagePropi>
+                        <ImagePropi src="Foto elemento.png"/>
+                    </ContainerImagePropi>
+                </ContainerPropi>
             </main>
             <Footer>
                 <ListSocialNetworks>

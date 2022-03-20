@@ -3,14 +3,14 @@ import styled from 'styled-components'
 export const Header = styled.header`
     padding: 1%;
     display: flex;
-    padding-top: 12%;
+    padding-top: 10%;
     align-items: center;
     flex-direction: column;
     background-color: #ffffff;
 `
 
 export const Title = styled.h1`
-    font-size: 40px;
+    font-size: 45px;
     margin: auto;
     text-transform: uppercase;
     background: linear-gradient(90deg, #A37151 0%, #C8977F 97.49%);
@@ -30,7 +30,7 @@ export const Title = styled.h1`
 
 export const SubTitle = styled.span`
     color: #000000;
-    margin-top: 12%;
+    margin-top: 10%;
     font-size: 15px;
     white-space: 100px;
     text-transform: uppercase;

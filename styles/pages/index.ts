@@ -27,27 +27,42 @@ export const Title = styled.h1`
 `
 
 export const Footer = styled.footer`
-    background-color: #ffffff;
     width: 100%;
     display: flex;
+    background-color: #ffffff;
 `
 
 export const ListSocialNetworks = styled.ul`
-    background-color: #ffffff;
+    width: fit-content;
 `
 
 export const ItemListSocialNetworks = styled.li`
+    width: 48%;
+    padding: 3%;
     display: flex;
-    background-color: #ffffff;
+    border-radius: 10px;
+    align-items: center;
+
+    :hover {
+        background-color: #d1d1d1
+    }
+`
+
+export const LinkItemListSocialNetworks = styled.a`
+    width: 60%;
+    display: flex;
+    align-items: center;
 `
 
 export const TitleItemListSocialNetworks = styled.span`
     color: #D9805F;
-    background-color: #ffffff;
+    margin-left: 5%;
+    white-space: nowrap;
 `
 
 export const IconItemListSocialNetworks = styled.svg`
-    width: 10%;
+    width: 40%;
+    height: auto;
     fill: #D9805F;
-    background-color: #ffffff;
+    min-width: 40%;
 `

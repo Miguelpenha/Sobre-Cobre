@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Header = styled.header`
     padding: 1%;
     display: flex;
-    padding-top: 10%;
+    padding-top: 8%;
     align-items: center;
     flex-direction: column;
     background-color: #ffffff;
@@ -49,12 +49,47 @@ export const Title = styled.h1`
 
 export const SubTitle = styled.span`
     color: #000000;
-    margin-top: 10%;
+    margin-top: 8%;
     font-size: 15px;
-    white-space: 100px;
-    text-transform: uppercase;
     position: relative;
     width: fit-content;
+    text-transform: uppercase;
+
+    :after {
+        left: 0;
+        bottom: 0;
+        content: '';
+        width: 100%;
+        height: 2.5px;
+        position: absolute;
+        transform: scaleX(0);
+        background-color: #D9805F;
+        transform-origin: bottom right;
+        transition: transform 0.35s ease-out;
+    }
+
+    :hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+`
+
+export const LinkParticipantes = styled.a`
+    width: 10%;
+    display: flex;
+    margin-top: 2%;
+    color: #D9805F;
+    font-size: 15px;
+    font-weight: bold;
+    position: relative;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    svg {
+        width: 20%;
+        fill: #D9805F;
+    }
 
     :after {
         left: 0;
@@ -315,6 +350,7 @@ export const TextFerra = styled.span`
 
 export const ContainerPropi = styled.div`
     display: flex;
+    margin-bottom: 1%;
     background-color: #ffffff;
 `
 
@@ -388,8 +424,8 @@ export const ItemPropi = styled.li`
 `
 
 export const ContainerImagePropi = styled.div`
-    margin: 1%;
     width: 50%;
+    margin: 0.8%;
     overflow: hidden;
     position: relative;
 `
@@ -414,7 +450,6 @@ export const Footer = styled.footer`
 export const ListSocialNetworks = styled.ul`
     padding: 1%;
     display: flex;
-    list-style-type: none;
     flex-direction: column;
 `
 
@@ -424,13 +459,21 @@ interface ILinkItemListSocialNetworks {
 
 export const LinkItemListSocialNetworks = styled.a<ILinkItemListSocialNetworks>`
     padding: 1%;
-    margin-bottom: 5%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
     border-radius: 12px;
     width: ${props => props.width}%;
 
     :hover {
         background-color: #cccccc;
         text-decoration: underline #cccccc;
+
+        span {
+            :after {
+                transform: scaleX(1);
+                transform-origin: bottom left;
+            }
+        }
     }
 `
 
@@ -458,11 +501,6 @@ export const TitleItemListSocialNetworks = styled.span`
         transform-origin: bottom right;
         transition: transform 0.25s ease-out;
     }
-
-    :hover:after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
-    }
 `
 
 interface IIconItemListSocialNetworks {
@@ -473,4 +511,68 @@ export const IconItemListSocialNetworks = styled.svg<IIconItemListSocialNetworks
     fill: #D9805F;
     height: auto;
     width: ${props => props.widthIcon}%;
+`
+
+export const ContainerParticipantes = styled.div`
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-left: 4px solid #D9805F;
+    border-right: 4px solid #D9805F;
+`
+
+export const TitleListParticipantes = styled.h2`
+    color: #D9805F;
+    font-size: 2.2vw;
+    margin-bottom: 4%;
+    position: relative;
+    
+    :after {
+        left: 0;
+        bottom: 0;
+        content: '';
+        width: 100%;
+        height: 2.5px;
+        position: absolute;
+        transform: scaleX(0);
+        background-color: #D9805F;
+        transform-origin: bottom right;
+        transition: transform 0.35s ease-out;
+    }
+
+    :hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+`
+
+export const ListParticipantes = styled.ul`
+    margin: auto;
+    width: fit-content;
+`
+
+export const ItemListParticipantes = styled.li`
+    color: #D9805F;
+    font-size: 1.6vw;
+    text-align: left;
+    position: relative;
+    width: fit-content;
+    
+    :after {
+        left: 0;
+        bottom: 0;
+        content: '';
+        width: 100%;
+        height: 2.5px;
+        position: absolute;
+        transform: scaleX(0);
+        background-color: #D9805F;
+        transform-origin: bottom right;
+        transition: transform 0.35s ease-out;
+    }
+
+    :hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
 `

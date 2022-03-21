@@ -10,7 +10,7 @@ export default function Home() {
             <Header>
                 <Title>Cobre</Title>
                 <SubTitle>Seminário de Biologia, Colégio fernando ferrari. 2022</SubTitle>
-                <LinkParticipantes href="#participantes">
+                <LinkParticipantes href="#participantes" title="Ver participantes">
                     Participantes
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                         <path d="M0 0h24v24H0V0z" fill="none"/>

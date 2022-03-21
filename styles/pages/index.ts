@@ -75,19 +75,25 @@ export const SubTitle = styled.span`
 `
 
 export const LinkParticipantes = styled.a`
-    width: 10%;
+    width: 12.4%;
     display: flex;
+    padding: 0.5%;
     margin-top: 2%;
     color: #D9805F;
     font-size: 15px;
     font-weight: bold;
     position: relative;
+    border-radius: 10px;
     align-items: center;
     text-decoration: none;
     text-transform: uppercase;
+
+    :hover {
+        background-color: #cccccc;
+    }
     
     svg {
-        width: 20%;
+        width: 16%;
         fill: #D9805F;
     }
 
@@ -450,6 +456,7 @@ export const Footer = styled.footer`
 export const ListSocialNetworks = styled.ul`
     padding: 1%;
     display: flex;
+    margin-bottom: 5%;
     flex-direction: column;
 `
 

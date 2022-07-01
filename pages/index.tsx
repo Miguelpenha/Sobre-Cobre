@@ -5,6 +5,7 @@ export default function Home() {
     return (
         <>
             <Head>
+                <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
                 <title>Sobre cobre</title>
             </Head>
             <Header>
@@ -20,7 +21,7 @@ export default function Home() {
             </Header>
             <main>
                 <ContainerCara>
-                    <VideoCara src="Vídeo cobre.mp4" autoPlay={true} loop muted playsInline/>
+                    <VideoCara src="img/Vídeo cobre.mp4" autoPlay={true} loop muted playsInline/>
                     <ContainerCaraOverlay>
                         <TextCara>O cobre é um metal de transição maleável, dúctil e com resistência à corrosão, elemento de cor alaranjada, pode ser encontrado de forma nativa.</TextCara>
                     </ContainerCaraOverlay>
@@ -28,17 +29,17 @@ export default function Home() {
                 <ContainerMate>
                     <TextMate>Aplicável na construção civil, na fabricação de objetos e ferramentas, e em tubos e fios condutores de energia.</TextMate>
                     <ContainerImageMate>
-                        <ImageMate src="Foto cobre matériais.png"/>
+                        <ImageMate src="img/Foto cobre matériais.png"/>
                     </ContainerImageMate>
                 </ContainerMate>
                 <ContainerMol>
                     <TextMol>O cobre é um material versátil pelas suas propriedades metálicas e, principalmente, pela facilidade de moldagem. Suspeita-se ter sido o primeiro metal manipulado pelo ser humano.</TextMol>
                     <ContainerImageMol>
-                        <VideoMol src="Vídeo cobre derretido.mp4" autoPlay={true} loop muted playsInline/>
+                        <VideoMol src="img/Vídeo cobre derretido.mp4" autoPlay={true} loop muted playsInline/>
                     </ContainerImageMol>
                 </ContainerMol>
                 <ContainerFerra>
-                    <ImageFerra src="Foto cobre ferramentas.png"/>
+                    <ImageFerra src="img/Foto cobre ferramentas.png"/>
                     <ContainerFerraOverlay>
                         <TextFerra>Marcou o fim da Idade da Pedra Polida com a substituição das ferramentas de pedra por ferramentas de cobre e ligas de cobre, esse período histórico ficou conhecido como Idade do Bronze.</TextFerra>
                     </ContainerFerraOverlay>
@@ -58,7 +59,7 @@ export default function Home() {
                         </ListPropi>
                     </ContainerTextPropi>
                     <ContainerImagePropi>
-                        <ImagePropi src="Foto elemento.png"/>
+                        <ImagePropi src="img/Foto elemento.png"/>
                     </ContainerImagePropi>
                 </ContainerPropi>
             </main>
